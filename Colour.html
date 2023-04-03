@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Show Demo</title>
+    <script src="js/angular.min.js"></script>
+  </head>
+  <body bgcolor="grey">
+    <div ng-app="">
+      <button ng-click="one? one=false:one=true">Colours</button>
+      <div id="red" ng-show="one" style="background-color: red; height: 58px; width: 60%;" >
+        <p>Scarlet</p>
+      </div>
+      <div ng-show="one" style="background-color: rosybrown; height: 58px; width: 60%;" class="text_dec">
+        <p>rosybrown</p>
+      </div>
+      <div ng-show="one" style="background-color: navy; height: 58px; width: 60%;" class="text_dec">
+        <p>navy</p>
+      </div>
+      <div ng-show="one" style="background-color: salmon; height: 58px; width: 60%;" class="text_dec">
+        <p>salmon</p>
+      </div>
+      <div ng-show="one" style="background-color: rgb(103, 11, 143); height: 58px; width: 60%;" class="text_dec">
+        <p>purple</p>
+      </div>
+      <div ng-show="one" style="background-color: cyan; height: 58px; width: 60%;" class="text_dec">
+        <p>cyan</p>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function click() {
+            document.getElementById("red");
+            .outerHTML = "";
+        }
+    </script>
+  </body>
+</html>
